@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="../navbar/index.css" />
+    <link rel="stylesheet" href="../resgestration/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+  </head>
+  <body>
+    <section class="container">
+      <form action="" class="row">
+        <aside class="col-12 col-md-6">
+          <label for="name">Name</label>
+          <input type="text" placeholder="Enter your name" />
+        </aside>
+        <aside class="col-12 col-md-6">
+          <label for="addressline1">Address line 1</label>
+          <textarea name="addressline1" id="addressline1"></textarea>
+        </aside>
+        <aside class="col-12 col-md-6">
+          <label for="addressline2">Address line 1</label>
+          <textarea name="addressline2" id="addressline2"></textarea>
+        </aside>
+        <aside class="col-12 col-md-6">
+          <label for="city">City</label>
+          <input type="text" placeholder="Enter your city" name="city" />
+        </aside>
+        <aside class="col-12 col-md-6">
+          <label for="state">State</label>
+          <input type="text" placeholder="Enter your state" name="state" />
+        </aside>
+        <aside class="col-12 col-md-6">
+          <label for="pincode">Pincode</label>
+          <input type="text" placeholder="Enter Your Pincode" name="pincode" />
+        </aside>
+        <aside>
+          <button>Submit</button>
+        </aside>
+      </form>
+      <button id="currentLocation">Detect My Current Location</button>
+      <article
+        id="map"
+        style="height: 350px; width: 350px; border: solid"
+      ></article>
+    </section>
+
+    <script src="./address.js"></script>
+    <script src="../bootstrap/bootstrap.js"></script>
+    <script src="../navbar/index.js"></script>
+  </body>
+</html>
